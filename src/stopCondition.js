@@ -91,10 +91,7 @@ class StopCondition {
       const token = this.grid.getColumn(column).getTokenAtRow(row);
       if (!token || token.getColor() !== color) break;
       coloredCell.push(row);
-    } while (
-      Math.abs(StopCondition.MIDDLE_ROW - row) <
-      REQUIRED_ALIGNED_TOKENS_TO_WIN - 1
-    );
+    } while (Math.abs(MIDDLE_ROW - row) < REQUIRED_ALIGNED_TOKENS_TO_WIN - 1);
     return coloredCell;
   }
 
