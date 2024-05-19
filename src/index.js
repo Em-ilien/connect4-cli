@@ -18,11 +18,11 @@ let game;
 
 function askMove() {
   rl.question(
-    `Player (${game.getCurrentColor()}), enter column (0-6): `,
+    `Player (${game.getCurrentColor()}), enter column (1-7): `,
     (answer) => {
       const column = parseInt(answer, 10) - 1;
       if (isNaN(column) || column < 0 || column > 6) {
-        console.log("Invalid column. Please enter a number between 0 and 6.");
+        console.log("Invalid column. Please enter a number between 1 and 7.");
         askMove();
       } else {
         try {
