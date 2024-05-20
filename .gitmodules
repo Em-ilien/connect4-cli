@@ -1,0 +1,3 @@
+[submodule "src/connect4"]
+	path = src/connect4
+	url = https://github.com/Em-ilien/connect4.js.git

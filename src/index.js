@@ -2,8 +2,7 @@
 
 const { Command } = require("commander");
 const readline = require("readline");
-const Game = require("./game");
-const EventType = require("./eventType");
+const { Game, EventType } = require("./connect4");
 
 const program = new Command();
 
